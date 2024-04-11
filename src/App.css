@@ -1,38 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bill-form input, .bill-form button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+.bill-form input::placeholder {
+             
+  /* Firefox, Chrome, Opera */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bill-form input[type="text"], textarea {
+
+  background-color : #cecece2f; 
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bill-form button {
+  background-color : #53b6fc;
   color: white;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 9999px;
 }
 
-.App-link {
-  color: #61dafb;
+.Title {
+  color: rgb(47, 114, 192);
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  color: green;
 }
