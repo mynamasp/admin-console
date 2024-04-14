@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bill-form input,
+.bill-form button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.bill-form input::placeholder {
+
+    /* Firefox, Chrome, Opera */
+    text-align: center;
+}
+
+.bill-form input[type="text"],
+textarea {
+
+    background-color: #cecece2f;
+
+}
+
+
+.bill-form button {
+    background-color: #53b6fc;
+    color: white;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 9999px;
+}
+
+h2 {
+    color: green;
+}
