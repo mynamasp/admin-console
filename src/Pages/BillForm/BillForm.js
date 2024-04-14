@@ -90,7 +90,7 @@ function BillForm() {
     console.log("End Date:", Date2Epoch(endDate));
     
     // Call the API to get the logs
-    const apiUrl = `http://localhost:3030/admin/log-data/${meterId}/${Date2Epoch(startDate)}/${Date2Epoch(endDate)}`; // Change this to the actual API URL
+    const apiUrl = `https://urchin-app-8wf89.ondigitalocean.app/admin/log-data/${meterId}/${Date2Epoch(startDate)}/${Date2Epoch(endDate)}`; // Change this to the actual API URL
     console.log(`API URL: ${apiUrl}`)
 
     GetFromAPI(apiUrl, localStorage.getItem('token'));    
