@@ -17,7 +17,7 @@ function Login() {
     }, [isAuthSuccessful]);
 
     // The login API URL
-    const apiRoute = 'https://urchin-app-8wf89.ondigitalocean.app/admin';
+    const apiRoute = 'https://sea-lion-app-hejjs.ondigitalocean.app/admin';
 
     const handleSubmit = async (e) => {
         e.preventDefault();
